@@ -291,7 +291,7 @@ class GameEnviroment {
       cell.localPosition.y,
       player
     );
-    ship.killCell(cell.position);
+    ship.killCell(cell);
     if (!ship.checkAlive()) {
       this.refreshSea(player);
       result = 'Aimed';
