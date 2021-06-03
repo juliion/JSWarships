@@ -27,8 +27,7 @@ class Ship {
     return filtered.length > 0;
   }
 
-  killCell(cellPosition) {
-    const cell = this.getCell(cellPosition);
+  killCell(cell) {
     cell.cellType = CellType.Damaged;
     this.isAlive = this.checkAlive();
   }
